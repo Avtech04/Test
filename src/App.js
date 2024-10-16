@@ -41,6 +41,9 @@ function App() {
             <button className="close-btn" onClick={closeModal}>&times;</button>
             <h2>Have you registered for the <strong>Build with AI</strong> event?</h2>
             <p>If not, register now!</p>
+            <p className="mandatory-message">
+    It's mandatory to register to be eligible for the completion of the course.
+  </p>
             <a href="https://gdg.community.dev/e/m5kkvt/" className="register-button">Register Now</a>
           </div>
         </div>

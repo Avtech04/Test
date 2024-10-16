@@ -386,3 +386,13 @@ nav .status {
     padding: 6px 12px; /* Adjust button padding for small devices */
   }
 }
+
+
+
+/* Style for mandatory registration message */
+.mandatory-message {
+  color: red;  /* Red text */
+  font-weight: bold;  /* Bold to make it stand out */
+  margin-top: 10px;  /* Add some space above */
+  font-size: 16px;  /* Slightly larger text */
+}
