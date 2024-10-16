@@ -285,3 +285,104 @@ nav .status {
 .register-button:hover {
   background-color: #218838;
 }
+
+
+
+/* General mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+    padding: 15px;
+  }
+
+  .header-logo {
+    width: 120px; /* Adjust size for smaller screens */
+  }
+
+  .header-title h1 {
+    font-size: 28px; /* Adjust title size for mobile */
+  }
+
+  .last-updated {
+    font-size: 14px; /* Slightly smaller text for the last updated info */
+  }
+
+  .tab-buttons {
+    flex-direction: column; /* Stack tab buttons vertically */
+  }
+
+  .tab-button {
+    width: 90%; /* Make tab buttons full width on mobile */
+    margin-bottom: 10px; /* Add space between buttons */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .tab-content {
+    padding: 10px; /* Less padding for smaller screens */
+    box-shadow: none; /* Remove box-shadow for cleaner look */
+    border-radius: 5px; /* Smaller border-radius */
+  }
+
+  .searchBar {
+    width: 80%; /* Narrower search bar on mobile */
+    font-size: 14px; /* Smaller font size */
+    margin: 10px auto; /* Center on mobile */
+  }
+
+  table {
+    width: 100%; /* Full width on mobile */
+    font-size: 12px; /* Smaller table font size */
+  }
+
+  th, td {
+    padding: 8px; /* Smaller padding for table cells */
+  }
+
+  .modal {
+    width: 90%; /* Make modal fit smaller screens */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .modal h2 {
+    font-size: 20px; /* Smaller heading */
+  }
+
+  .modal p {
+    font-size: 14px; /* Adjust modal text size */
+  }
+
+  .register-button {
+    padding: 8px 16px; /* Smaller button padding */
+    font-size: 14px; /* Adjust button font size */
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 14px; /* Smaller footer text */
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media only screen and (max-width: 576px) {
+  .header-title h1 {
+    font-size: 24px; /* Further reduce title size for extra small devices */
+  }
+
+  .tab-button {
+    font-size: 12px; /* Smaller text on tab buttons */
+    padding: 10px; /* Less padding */
+  }
+
+  .modal {
+    padding: 15px; /* Reduce modal padding */
+  }
+
+  .modal h2 {
+    font-size: 18px; /* Smaller modal heading */
+  }
+
+  .register-button {
+    padding: 6px 12px; /* Adjust button padding for small devices */
+  }
+}
