@@ -32,7 +32,7 @@ function App() {
     <img src="/logo.jpg" alt="Logo" />
   </div>
   <div className="status">
-    <span>Last Updated: 15 Oct'24 11:00 AM</span>
+    <span>Last Updated: 16 Oct'24 12:30 PM</span>
   </div>
 </nav>
 
