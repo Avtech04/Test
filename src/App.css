@@ -130,3 +130,158 @@ nav .status {
 .table-container {
   margin-bottom: 60px; /* Adjust the margin if necessary */
 }
+
+
+
+
+.tab-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background: linear-gradient(90deg, #fdfd96, #f4d03f); /* Similar to the yellow buttons in the screenshot */
+  border: none;
+  padding: 15px 25px;
+  margin: 0 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tab-button:hover {
+  background: #f7dc6f;
+}
+
+.tab-button.active {
+  background: #f39c12; /* Highlighted state when active */
+  color: #fff;
+}
+
+.tab-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar {
+  background-color: #00539C;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+  width: 150px;
+}
+
+.header-title {
+  flex: 1;
+  text-align: center;
+}
+
+.header-title h1 {
+  font-size: 36px;
+  color: #333;
+  margin: 0;
+}
+
+.last-updated {
+  font-size: 16px;
+  color: #28a745;
+}
+
+
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.modal h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.modal p {
+  font-size: 16px;
+  color: #555;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+.register-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #218838;
+}
