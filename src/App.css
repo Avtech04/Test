@@ -97,3 +97,36 @@ nav .status {
   font-family: 'Roboto', sans-serif;  /* Or your preferred font */
   margin-left: 20px;        
 }
+
+
+
+.footer {
+  background-color: #282c34;  /* Dark background */
+  color: white;               /* White text */
+  padding: 10px;              /* Padding for space around the text */
+  text-align: center;         /* Center the text */
+  position: fixed;            /* Fixed at the bottom */
+  width: 100%;                /* Full width */
+  bottom: 0;                  /* Align at the bottom */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  font-size: 1.1em;           /* Slightly larger text */
+}
+
+.footer p {
+  margin: 0;                 /* Remove default paragraph margin */
+  font-family: 'Roboto', sans-serif; /* Use a good font */
+}
+
+.footer strong {
+  color: #ffcc00;            /* Highlight "varshney__ayush" in yellow */
+  font-weight: bold;         /* Make it bold */
+}
+
+
+.App {
+  padding-bottom: 60px; /* Adjust the padding to accommodate the footer height */
+}
+
+.table-container {
+  margin-bottom: 60px; /* Adjust the margin if necessary */
+}

@@ -32,7 +32,7 @@ function App() {
     <img src="/logo.jpg" alt="Logo" />
   </div>
   <div className="status">
-    <span>Last Updated: 15 Oct'24 09:00 AM</span>
+    <span>Last Updated: 15 Oct'24 11:00 AM</span>
   </div>
 </nav>
 
@@ -53,8 +53,8 @@ function App() {
             <th>User Name</th>
             <th>Access Code Redemption Status</th>
             <th>All Skill Badges & Games Completed</th>
-            <th># of Skill Badges Completed</th>
-            <th># of Arcade Games Completed</th>
+            <th>Number of Skill Badges Completed</th>
+            <th>Number of Arcade Games Completed</th>
           </tr>
         </thead>
         <tbody>
@@ -87,6 +87,9 @@ function App() {
           )}
         </tbody>
       </table>
+      <footer className="footer">
+        <p>Developed by <strong>varshney__ayush</strong></p>
+      </footer>
     </div>
   );
 }
