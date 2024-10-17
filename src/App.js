@@ -100,34 +100,44 @@ function App() {
                   </tr>
                 </thead>
                 <tbody>
-                  {filteredData.length > 0 ? (
-                    filteredData.map((row, index) => (
-                      <tr key={index} className={index % 2 === 0 ? 'evenRow' : 'oddRow'}>
-                        <td>{row['User Name']}</td>
-                        <td>
-                          <span className={getStatusClass(row['Access Code Redemption Status'])}>
-                            {row['Access Code Redemption Status']}
-                          </span>
-                        </td>
-                        <td>
-                          <span className={getStatusClass(row['All Skill Badges & Games Completed'])}>
-                            {row['All Skill Badges & Games Completed']}
-                          </span>
-                        </td>
-                        <td>{row['# of Skill Badges Completed']}</td>
-                        <td>
-                          <span className={getArcadeClass(row['# of Arcade Games Completed'])}>
-                            {row['# of Arcade Games Completed']}
-                          </span>
-                        </td>
-                      </tr>
-                    ))
-                  ) : (
-                    <tr>
-                      <td colSpan="5">No matching records found.</td>
-                    </tr>
-                  )}
-                </tbody>
+  {filteredData.length > 0 ? (
+    filteredData.map((row, index) => {
+      // Check if the row meets the conditions
+      const isHighlighted = 
+        row['Access Code Redemption Status'] === 'Yes' &&
+        row['All Skill Badges & Games Completed'] === 'Yes' &&
+        row['# of Skill Badges Completed'] === 15 &&
+        row['# of Arcade Games Completed'] === 1;
+
+      return (
+        <tr key={index} className={isHighlighted ? 'highlightRow' : (index % 2 === 0 ? 'evenRow' : 'oddRow')}>
+          <td>{row['User Name']}</td>
+          <td>
+            <span className={getStatusClass(row['Access Code Redemption Status'])}>
+              {row['Access Code Redemption Status']}
+            </span>
+          </td>
+          <td>
+            <span className={getStatusClass(row['All Skill Badges & Games Completed'])}>
+              {row['All Skill Badges & Games Completed']}
+            </span>
+          </td>
+          <td>{row['# of Skill Badges Completed']}</td>
+          <td>
+            <span className={getArcadeClass(row['# of Arcade Games Completed'])}>
+              {row['# of Arcade Games Completed']}
+            </span>
+          </td>
+        </tr>
+      );
+    })
+  ) : (
+    <tr>
+      <td colSpan="5">No matching records found.</td>
+    </tr>
+  )}
+</tbody>
+
               </table>
             </div>
           )}

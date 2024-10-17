@@ -387,6 +387,11 @@ nav .status {
   }
 }
 
+/* Style for highlighted rows */
+.highlightRow {
+  background-color: #ccffcc; /* Light green background */
+  font-weight: bold;  /* Make the text bold */
+}
 
 
 /* Style for mandatory registration message */
