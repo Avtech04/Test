@@ -142,19 +142,74 @@ function App() {
             </div>
           )}
 
-          {activeTab === 'updates' && (
-            <div>
-              <h2>Updates of Campaign</h2>
-              {/* Updates content */}
-            </div>
-          )}
+{activeTab === 'updates' && (
+  <div className="updates-content">
+    <h2>Updates of Campaign</h2>
+    
+    <div className="syllabus-section">
+      <h3>Syllabus for the Program</h3>
+      <p>
+        As part of the program, you'll learn concepts like computing, application development, big data & machine learning, 
+        security, and AI using cloud. These are structured in exciting games, trivia, and skill badges. You can find the 
+        complete campaign syllabus in the document here: 
+        <a href="https://goo.gle/genaicontent" target="_blank" className="syllabus-link"> Campaign Syllabus</a>.
+      </p>
+      <p className="important-note">
+        <strong>Note:</strong> All skill badges listed in the document are mandatory. Contributions to non-listed labs will not be 
+        considered. Completing other skill badges may exhaust your allocated credits, and no additional credits will be provided.
+      </p>
+    </div>
+    
+    <div className="important-points-section">
+      <h3>Important Points to Remember</h3>
+      <ul className="important-points-list">
+        <li><strong>Deadline:</strong> 11 November, 5 pm IST. Ensure you complete all labs and skill badges by this deadline.</li>
+         <li><strong>Credits:</strong> Use your credits wisely. If you exhaust credits before completing labs, no additional credits will be provided.</li>
+        <li><strong>Daily lab limit:</strong> Only 10 labs can be completed per day. Steady progress is encouraged.</li>
+        <li><strong>Arcade game slots:</strong> If not enough slots for the Gen AI Arcade game are available, check back the next day.</li>
+         <li><strong>Completion of listed labs:</strong> Plan accordingly, as only listed labs contribute towards rewards, with a 10-labs-per-day limit.</li>
+        <li><strong>300 credits limit:</strong> No additional top-ups will be provided, so manage your credits wisely.</li>
+           </ul>
+    </div>
+  </div>
+)}
 
-          {activeTab === 'social' && (
-            <div>
-              <h2>Social Media Handles</h2>
-              {/* Social media content */}
-            </div>
-          )}
+{activeTab === 'social' && (
+  <div className="social-media-page">
+    <h2>Follow Us on Social Media</h2>
+    
+    <div className="social-media-grid">
+      <div className="social-media-card">
+        <img src="insta-logo.webp" alt="Instagram" className="social-icon"/>
+        <h3>Instagram</h3>
+        <p>Stay updated with our latest posts and stories on Instagram!</p>
+        <a href="https://www.instagram.com/gdgc.mnnit/" target="_blank" className="social-link">Follow on Instagram</a>
+      </div>
+
+      <div className="social-media-card">
+        <img src="whatsapp-logo.webp" alt="WhatsApp" className="social-icon"/>
+        <h3>WhatsApp</h3>
+        <p>Join our community on WhatsApp for instant updates and conversations.</p>
+        <a href="https://chat.whatsapp.com/GPnV5IstcKoD1RJqmVFpPi" target="_blank" className="social-link">Join WhatsApp Group</a>
+      </div>
+
+      <div className="social-media-card">
+        <img src="linkedin-logo.webp" alt="LinkedIn" className="social-icon"/>
+        <h3>LinkedIn</h3>
+        <p>Connect with us professionally on LinkedIn and grow your network.</p>
+        <a href="https://www.linkedin.com/company/gdsc-mnnit/" target="_blank" className="social-link">Connect on LinkedIn</a>
+      </div>
+
+      <div className="social-media-card">
+        <img src="github-logo.webp" alt="GitHub" className="social-icon"/>
+        <h3>GitHub</h3>
+        <p>Contribute to our open-source projects and explore our code on GitHub.</p>
+        <a href="https://github.com/gdsc-mnnita" target="_blank" className="social-link">Explore on GitHub</a>
+      </div>
+    </div>
+  </div>
+)}
+
         </div>
       </div>
 
