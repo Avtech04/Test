@@ -7,7 +7,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('progress'); // Manage which tab is active
   const lastUpdated = '18 Oct\'24 10:00 AM'; // You can update this dynamically as well
 
-  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal
+  const [isModalOpen, setIsModalOpen] = useState(true); // State for modal
 
   useEffect(() => {
     fetch('/cleaned_data.json')
@@ -39,13 +39,11 @@ function App() {
         <div className="modal-overlay">
           <div className="modal">
             <button className="close-btn" onClick={closeModal}>&times;</button>
-            <h2>Have you registered for the <strong>Build with AI</strong> event?</h2>
-            <p>If not, register now!</p>
-            <p className="mandatory-message">
-    It's mandatory to register to be eligible for the completion of the course.
-  </p>
-            <a href="https://gdg.community.dev/e/m5kkvt/" className="register-button">Register Now</a>
-          </div>
+            <h2>Quick Update Regarding the <strong>Gen AI Study Jams</strong> Campaign</h2>
+<p>The campaign for our campus is paused from October 22nd to November 1st due to high traffic on the Google Cloud Skill Boost platform.</p>
+<p>Many participants are accessing it concurrently, and adjustments are being made to ensure fair access for everyone.</p>
+
+            </div>
         </div>
       )}
 
