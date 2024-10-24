@@ -567,3 +567,47 @@ nav .status {
 .social-link:hover {
   background-color: #0056b3;
 }
+
+
+/* Modal Swag Image and Text */
+.swag-revealed-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.swag-image {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for a pop-out effect */
+}
+
+.swag-text {
+  font-size: 28px;
+  font-family: 'Pacifico', cursive; /* Exotic, playful font */
+  color: #ff69b4; /* Hot pink color to make it vibrant */
+  display: flex;
+  align-items: center;
+}
+
+.swag-revealed-title {
+  margin-left: 10px;
+}
+
+
+/* Highlighted Message */
+.highlighted-message {
+  font-size: 22px;
+  color: #d9534f; /* Red color for the alert */
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.highlight-date {
+  background-color: #f9f871; /* Yellow background for date highlight */
+  padding: 5px 10px;
+  border-radius: 5px;
+}

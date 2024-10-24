@@ -39,11 +39,17 @@ function App() {
         <div className="modal-overlay">
           <div className="modal">
             <button className="close-btn" onClick={closeModal}>&times;</button>
+            <div className="swag-revealed-container">
+    <img src="swag.jpeg" alt="Swag Revealed" className="swag-image" />
+    <div className="swag-text">
+      🎁 <span className="swag-revealed-title">Swags Revealed!</span> 🎉
+    </div>
+  </div>
             <h2>Quick Update Regarding the <strong>Gen AI Study Jams</strong> Campaign</h2>
 <p>The campaign for our campus is paused from October 22nd to November 1st due to high traffic on the Google Cloud Skill Boost platform.</p>
-<p>Many participants are accessing it concurrently, and adjustments are being made to ensure fair access for everyone.</p>
-
-            </div>
+<p className="highlighted-message">
+    <strong>⚡ Start doing labs from <span className="highlight-date">November 2</span> ⚡</strong>
+  </p>          </div>
         </div>
       )}
 
