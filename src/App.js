@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [activeTab, setActiveTab] = useState('progress'); // Manage which tab is active
-  const lastUpdated = '18 Oct\'24 10:00 AM'; // You can update this dynamically as well
+  const lastUpdated = '30 Oct\'24 10:00 AM'; // You can update this dynamically as well
 
   const [isModalOpen, setIsModalOpen] = useState(true); // State for modal
 
@@ -36,22 +36,20 @@ function App() {
     <div className="App">
       {/* Modal Popup */}
       {isModalOpen && (
-        <div className="modal-overlay">
-          <div className="modal">
-            <button className="close-btn" onClick={closeModal}>&times;</button>
-            <div className="swag-revealed-container">
-    <img src="swag.jpeg" alt="Swag Revealed" className="swag-image" />
-    <div className="swag-text">
-      🎁 <span className="swag-revealed-title">Swags Revealed!</span> 🎉
+  <div className="modal-overlay">
+    <div className="modal">
+      <button className="close-btn" onClick={closeModal}>&times;</button>
+      
+      <div className="swag-revealed-container">
+        <img src="swag.jpeg" alt="Swag Revealed" className="swag-image" />
+        <div className="swag-text">
+          🎁 <span className="swag-revealed-title">Swags Revealed!</span> 🎉
+        </div>
+      </div>
     </div>
   </div>
-            <h2>Quick Update Regarding the <strong>Gen AI Study Jams</strong> Campaign</h2>
-<p>The campaign for our campus is paused from October 22nd to November 1st due to high traffic on the Google Cloud Skill Boost platform.</p>
-<p className="highlighted-message">
-    <strong>⚡ Start doing labs from <span className="highlight-date">November 2</span> ⚡</strong>
-  </p>          </div>
-        </div>
-      )}
+)}
+
 
       {/* Simplified Navigation Bar */}
       <header className="header">
