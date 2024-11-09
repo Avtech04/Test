@@ -7,7 +7,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('progress'); // Manage which tab is active
   const lastUpdated = '9 Nov\'24 9:00 AM'; // You can update this dynamically as well
 
-  const [isModalOpen, setIsModalOpen] = useState(true); // State for modal
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal
 
   useEffect(() => {
     fetch('/cleaned_data.json')
