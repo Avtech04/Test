@@ -109,7 +109,8 @@ function App() {
         row['Access Code Redemption Status'] === 'Yes' &&
         row['All Skill Badges & Games Completed'] === 'Yes' &&
         row['# of Skill Badges Completed'] === 15 &&
-        row['# of Arcade Games Completed'] === 1;
+        row['# of Arcade Games Completed'] >= 1;
+
 
       return (
         <tr key={index} className={isHighlighted ? 'highlightRow' : (index % 2 === 0 ? 'evenRow' : 'oddRow')}>
