@@ -21,7 +21,7 @@ function App() {
   };
 
   const getArcadeClass = (games) => {
-    return games === 1 ? 'statusButton yellowButton' : 'statusButton redButton';
+    return games >= 1 ? 'statusButton yellowButton' : 'statusButton redButton';
   };
 
   const filteredData = data.filter((row) =>
@@ -106,10 +106,7 @@ function App() {
     filteredData.map((row, index) => {
       // Check if the row meets the conditions
       const isHighlighted = 
-        row['Access Code Redemption Status'] === 'Yes' &&
-        row['All Skill Badges & Games Completed'] === 'Yes' &&
-        row['# of Skill Badges Completed'] === 15 &&
-        row['# of Arcade Games Completed'] >= 1;
+        row['All Skill Badges & Games Completed'] === 'Yes' 
 
 
       return (
