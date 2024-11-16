@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [activeTab, setActiveTab] = useState('progress'); // Manage which tab is active
-  const lastUpdated = '15 Nov\'24 9:00 AM'; // You can update this dynamically as well
+  const lastUpdated = '16 Nov\'24 9:00 AM'; // You can update this dynamically as well
 
   const [isModalOpen, setIsModalOpen] = useState(false); // State for modal
 
